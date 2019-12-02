@@ -10,7 +10,7 @@ Goal:
     This project aims to deploy simplest/lazy High Available (HA) Jump-host A.K.A 'RabbitHole' to operate and maintain your private AWS infrastructure.
 
 Benefits:
-    Basion Host will be allways up ( some down time acceptable).
+    Basion Host will be allways up ( some downtime acceptable).
     In case this host will crash, another host has to auto-started (about 5-10 min) 
 
 
