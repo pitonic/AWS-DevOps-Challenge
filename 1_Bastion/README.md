@@ -10,7 +10,7 @@ Goal:
     This project aims to deploy simplest/lazy High Available (HA) Jump-host A.K.A 'RabbitHole' to operate and maintain your private AWS infrastructure.
 
 Benefits:
-    Basion Host will be allways up ( some down time acceptable).
+    Basion Host will be allways up ( some downtime acceptable).
     In case this host will crash, another host has to auto-started (about 5-10 min) 
 
 
@@ -101,27 +101,26 @@ terraform apply
 ### Smoke Jumpers TIPS
 
 Finally you should receive similar message. 
-
+~~~
 Outputs:
 
 IMPORTANT_INFO_______For_SmokeJumpers_____Please_use_this_Bastion_host_IP = 3.233.44.249
 --- ommited ---
+~~~
 
-
-
-cownt to Ten and jump on it - 3.233.44.249
+count to Ten and jump on it - 3.233.44.249
 
 ```
 ssh ec2-user@3.233.44.249
 ```
 
 in case of Bastion host restrted, you will reseived warning :
-
+~~~
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 --- ommited ---
-
+~~~
 
 To ingnore this Strict Host Key Checking
 
